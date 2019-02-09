@@ -25,10 +25,11 @@
         </Grid.RowDefinitions>
         <Button Content="Settings" Grid.Column="4" HorizontalAlignment="Left" Height="30" Margin="115,10,0,0" VerticalAlignment="Top" Width="79">
             <Button.Flyout>
-                <Flyout>
-                    <Grid/>
-                </Flyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem/>
+                </MenuFlyout>
             </Button.Flyout>
+
         </Button>
     </Grid>
 </Page>
