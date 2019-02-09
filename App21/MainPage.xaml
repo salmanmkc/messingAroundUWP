@@ -38,5 +38,13 @@
         </Button>
         <ScrollViewer Grid.ColumnSpan="4" Grid.Column="1" Margin="-70,-48,59,10" Grid.Row="1" Grid.RowSpan="4"/>
         <TextBox PlaceholderText="Search" Grid.Column="2" HorizontalAlignment="Stretch" Margin="-102,40,20,48" Text="" VerticalAlignment="Stretch"/>
+        <Button Content="Search" Grid.Column="3" HorizontalAlignment="Stretch" Margin="20,40,35,0" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" Height="40">
+            <Button.Flyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Set default search"/>
+                    <MenuFlyoutItem Text="Set pinned search"/>
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
     </Grid>
 </Page>
