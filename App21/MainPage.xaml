@@ -37,5 +37,6 @@
 
         </Button>
         <ScrollViewer Grid.ColumnSpan="4" Grid.Column="1" Margin="-70,-48,59,10" Grid.Row="1" Grid.RowSpan="4"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Stretch" Margin="-102,40,20,48" Text="" VerticalAlignment="Stretch"/>
     </Grid>
 </Page>
