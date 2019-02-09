@@ -26,7 +26,12 @@
         <Button Content="Settings" Grid.Column="4" HorizontalAlignment="Left" Height="30" Margin="115,10,0,0" VerticalAlignment="Top" Width="79">
             <Button.Flyout>
                 <MenuFlyout>
-                    <MenuFlyoutItem/>
+                    <MenuFlyoutItem Text="Profile page"/>
+                    <MenuFlyoutItem Text="Subscriptions"/>
+                    <MenuFlyoutItem Text="Watch Later"/>
+                    <MenuFlyoutItem Text="Hisotry"/>
+                    <MenuFlyoutItem Text="Settings"/>
+                    
                 </MenuFlyout>
             </Button.Flyout>
 
