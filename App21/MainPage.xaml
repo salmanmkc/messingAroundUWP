@@ -31,10 +31,11 @@
                     <MenuFlyoutItem Text="Watch Later"/>
                     <MenuFlyoutItem Text="Hisotry"/>
                     <MenuFlyoutItem Text="Settings"/>
-                    
+
                 </MenuFlyout>
             </Button.Flyout>
 
         </Button>
+        <ScrollViewer Grid.ColumnSpan="4" Grid.Column="1" Margin="-70,-48,59,10" Grid.Row="1" Grid.RowSpan="4"/>
     </Grid>
 </Page>
