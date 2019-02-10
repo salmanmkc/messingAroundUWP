@@ -1,8 +1,10 @@
-﻿using System;
+﻿using MyToolkit.Multimedia;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +27,12 @@ namespace App21
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        internal async Task<Uri> GetYoutubeUri(string VideoID)
+        {
+            YouTubeUri uri = await YouTube.GetVideoUriAsync(VideoID, YouTubeQuality.Quality1080P);
+            return uri.Uri;
         }
     }
 }
