@@ -54,7 +54,7 @@
             </Grid>
         </ScrollViewer>
         <TextBox PlaceholderText="Search" Grid.Column="2" HorizontalAlignment="Stretch" Margin="-102,40,20,48" Text="" VerticalAlignment="Stretch"/>
-        <Button Content="Search" Grid.Column="3" HorizontalAlignment="Stretch" Margin="20,40,35,0" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition" Height="40">
+        <Button Content="Search" Grid.Column="3" HorizontalAlignment="Stretch" Margin="20,40,35,0" VerticalAlignment="Top" Height="40">
             <Button.Flyout>
                 <MenuFlyout>
                     <MenuFlyoutItem Text="Set default search"/>
@@ -62,5 +62,7 @@
                 </MenuFlyout>
             </Button.Flyout>
         </Button>
+        <MediaElement x:Name="player" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" AreTransportControlsEnabled="True" />
+        <Button Content="Button" Click="Button_Click" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="25,125,0,0" VerticalAlignment="Top" Width="88"/>
     </Grid>
 </Page>

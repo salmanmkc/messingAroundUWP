@@ -33,6 +33,19 @@ namespace App21
         {
             YouTubeUri uri = await YouTube.GetVideoUriAsync(VideoID, YouTubeQuality.Quality1080P);
             return uri.Uri;
+           
+        }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Uri _videoUri = await GetYoutubeUri("s1EOxMrbPb4");
+            if (_videoUri != null)
+            {
+                player.Source = _videoUri;
+                player.Play();
+            }
         }
     }
+
+
 }
